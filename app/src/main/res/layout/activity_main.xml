@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/tvStartDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="Enter start date"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/tvStartMonth"
+        android:layout_width="0dp"
+        android:layout_height="64dp"
+        android:gravity="center"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="MM"
+        android:inputType="number"
+        app:layout_constraintEnd_toStartOf="@+id/tvStartYear"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/tvStartDay"
+        app:layout_constraintTop_toBottomOf="@+id/tvStartDate" />
+
+    <EditText
+        android:id="@+id/tvStartYear"
+        android:layout_width="0dp"
+        android:layout_height="64dp"
+        android:gravity="center"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="yyyy"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/tvStartMonth"
+        app:layout_constraintTop_toBottomOf="@+id/tvStartDate" />
+
+    <EditText
+        android:id="@+id/tvStartDay"
+        android:layout_width="0dp"
+        android:layout_height="64dp"
+        android:gravity="center"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="dd"
+        android:inputType="number"
+        app:layout_constraintEnd_toStartOf="@+id/tvStartMonth"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvStartDate" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="42dp"
+        android:text="Enter end date"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvStartMonth" />
+
+    <EditText
+        android:id="@+id/tvEndDay"
+        android:layout_width="0dp"
+        android:layout_height="64dp"
+        android:gravity="center"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="dd"
+        android:inputType="number"
+        android:text=""
+        app:layout_constraintEnd_toStartOf="@+id/tvEndMonth"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+    <EditText
+        android:id="@+id/tvEndMonth"
+        android:layout_width="0dp"
+        android:gravity="center"
+        android:layout_height="64dp"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="MM"
+        android:inputType="number"
+        android:text=""
+        app:layout_constraintEnd_toStartOf="@+id/tvEndYear"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/tvEndDay"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+    <EditText
+        android:id="@+id/tvEndYear"
+        android:layout_width="0dp"
+        android:layout_height="64dp"
+        android:layout_marginTop="16dp"
+        android:gravity="center"
+        android:ems="10"
+        android:hint="yyyy"
+        android:inputType="number"
+        android:text=""
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/tvEndMonth"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+    <Button
+        android:id="@+id/btnGetWeekDays"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="32dp"
+        android:text="Get week days"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.548"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/tvWeekDays"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="0"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvEndMonth" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
